@@ -40,6 +40,8 @@ public class CountryCodePicker extends RelativeLayout {
     final static int LANGUAGE_SPANISH = 13;
     final static int LANGUAGE_HEBREW = 14;
     final static int LANGUAGE_TRADITIONAL_CHINESE = 15;
+    final static int LANGUAGE_HUNGARIAN = 16;
+
     static String TAG = "CCP";
     static String BUNDLE_SELECTED_CODE = "selectedCode";
     static int LIB_DEFAULT_COUNTRY_CODE = 91;
@@ -482,6 +484,8 @@ public class CountryCodePicker extends RelativeLayout {
                 return Language.SPANISH;
             case LANGUAGE_HEBREW:
                 return Language.HEBREW;
+            case LANGUAGE_HUNGARIAN:
+                return Language.HUNGARIAN;
             default:
                 return Language.ENGLISH;
         }
@@ -519,6 +523,8 @@ public class CountryCodePicker extends RelativeLayout {
                 return "Seleccionar país";
             case HEBREW:
                 return "בחר מדינה";
+            case HUNGARIAN:
+                return "Válassz országot";
             default:
                 return "Select country";
         }
@@ -556,6 +562,8 @@ public class CountryCodePicker extends RelativeLayout {
                 return "buscar ...";
             case HEBREW:
                 return "בחר...";
+            case HUNGARIAN:
+                return "Keresés...";
 
             default:
                 return "Search...";
@@ -598,6 +606,8 @@ public class CountryCodePicker extends RelativeLayout {
                 return "como resultado que no se encuentra";
             case HEBREW:
                 return "לא נמצאו תוצאות";
+            case HUNGARIAN:
+                return "Nincs találat";
             default:
                 return "No result found";
         }
@@ -1060,7 +1070,7 @@ public class CountryCodePicker extends RelativeLayout {
 
     //add here so that language can be set programmatically
     public enum Language {
-        ARABIC, BENGALI, SIMPLIFIED_CHINESE, TRADITIONAL_CHINESE, ENGLISH, FRENCH, GERMAN, GUJARATI, HINDI, JAPANESE, JAVANESE, PORTUGUESE, RUSSIAN, SPANISH, HEBREW
+        ARABIC, BENGALI, SIMPLIFIED_CHINESE, TRADITIONAL_CHINESE, ENGLISH, FRENCH, GERMAN, GUJARATI, HINDI, JAPANESE, JAVANESE, PORTUGUESE, RUSSIAN, SPANISH, HEBREW, HUNGARIAN
     }
 
     /*
